@@ -1,0 +1,254 @@
+/******************************************
+/* BASE STYLES
+/*******************************************/
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  height: 1;
+}
+
+/* root */
+:root {
+  --color1: #1B435D;
+  --color2: #78BBE6;
+  --color3: #D5EEFF;
+  --color4: #F99F48;
+  --color5: #3ca4e4;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.6rem;
+  background: var(--color1);
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+h1, label{
+  color: var(--color1);
+}
+
+h2{
+  color: var(--color4);
+}
+
+figure{
+  background: #eee;
+  border-radius: 5px;
+  margin: 0 1.5rem;
+  padding: 1rem;
+  color:var(--color1);
+  font-style: italic;
+}
+
+figcaption{
+  padding-top:0.5rem;
+  text-align: end;
+  font-style: italic;
+  font-size: 1.3rem;
+}
+
+figure.jp, figure.jp>figcaption{
+  font-size: 1.2rem;
+  font-style: normal;
+}
+
+blockquote p::before {
+  content: '\201C';
+}
+
+blockquote p::after {
+  content: '\201D';
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #3ca4e4;
+}
+
+input{
+  margin-left: 1rem;
+  padding: 1rem 1.5rem;
+  outline: none;
+  border: none;
+  background: var(--color3);
+  border-radius: 1rem;
+}
+
+button{
+  color: white;
+  background: var(--color2);
+  border: none;
+  outline: none;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+}
+
+button:hover{
+  background-color: var(--color5);
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.container {
+  max-width: 45rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.main-content {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  box-shadow: (10rem 10rem 10rem var(--color3));
+  padding: 2rem 0.5rem;
+}
+
+.headButton{
+  margin-left: auto;
+}
+
+.headButton button{
+  color: var(--color2);
+  background: none;
+}
+
+.headButton button:last-child{
+  margin-right: 1.5rem;
+}
+
+.headButton button:hover{
+  color:var(--color5);
+  background: var(--color3);
+}
+
+.citation{
+  color: var(--color1);
+  font-size: 1rem;
+}
+
+.cursor{
+  cursor: pointer;
+}
+
+.hidden{
+  display: none;
+}
+
+.setZordic {
+  color: white;
+  background: var(--color3);
+  border: none;
+  outline: none;
+  padding: 1.5rem 2rem;
+}
+
+#placeresultEN, #placeresultJP{
+  color: var(--color4);
+  font-weight: bold;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+.form-content{
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap:1rem;
+  margin: 0 auto;
+}
+
+.zodiac-img {
+  background-size: cover;
+  background-position: center;
+  width: 5rem;
+  height: 5rem;
+  overflow: hidden;
+}
+
+#zodiac-1 {
+  background-image: url("https://i.ibb.co/tJnZnY8/eto-mark01-nezumi.png");
+}
+
+#zodiac-2 {
+  background-image: url("https://i.ibb.co/YZsRCPJ/eto-mark02-ushi.png");
+}
+
+#zodiac-3 {
+  background-image: url("https://i.ibb.co/z7PFtLh/eto-mark03-tora.png");
+}
+
+#zodiac-4 {
+  background-image: url("https://i.ibb.co/P5FWL6x/eto-mark04-usagi.png");
+}
+
+#zodiac-5 {
+  background-image: url("https://i.ibb.co/MfRrLqG/eto-mark05-tatsu.png");
+}
+
+#zodiac-6 {
+  background-image: url("https://i.ibb.co/yWv1nSp/eto-mark06-hebi.png");
+}
+
+#zodiac-7 {
+  background-image: url("https://i.ibb.co/sVhBYc7/eto-mark07-uma.png");
+}
+
+#zodiac-8 {
+  background-image: url("https://i.ibb.co/WGM5QDZ/eto-mark08-hitsuji.png");
+}
+
+#zodiac-9 {
+  background-image: url("https://i.ibb.co/JFN4f1W/eto-mark09-saru.png");
+}
+
+#zodiac-10 {
+  background-image: url("https://i.ibb.co/R3dq8ws/eto-mark10-tori.png");
+}
+
+#zodiac-11 {
+  background-image: url("https://i.ibb.co/XywQLG4/eto-mark11-inu.png");
+}
+
+#zodiac-0 {
+  background-image: url("https://i.ibb.co/mCss4ZB/eto-mark12-inoshishi.png");
+}
+
+/* transform Big - small*/
+.transformBig{
+  transition-duration: 3s;
+  transform:scale(1.6);
+}
+
+.transformSmall{
+  transition-duration: 3s;
+  transform:scale(0.8);
+  opacity: 0.5;
+}

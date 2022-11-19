@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="This app helps youtubers pick the best background color for their videos">
+	<meta name="keywords" content="youtube, background, lights">
+
+	<title>Chinese Zodiac</title>
+
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<!----------------------------------------------------------
+	This span is always hidden to manage status.
+		status : 0 (default)
+		status : 1 (If a user clicks "set", status will be 1.)
+	-->
+	<input type="text" class="hidden" id="status" value="0">
+	<!---------------------------------------------------------->
+
+	<!----------------------------------------------------------
+	This span is always hidden to manage language.
+		show-language : EN (default)
+		show-language : JP (If a user clicks "Japanese", show-language will be JP.)
+	-->
+	<input type="text" class="hidden" id="display-language" value="EN">
+	<!---------------------------------------------------------->
+
+
+	<div class="container">
+		<div class="main-content">
+			<div class="headButton">
+				<button class="langChangeButton cursor" id="langChangeToEN">
+					<span class="eng">English</span>
+					<span lang="ja" class="jp hidden">英語</span>
+				</button>
+				<button class="langChangeButton cursor" id="langChangeToJP">
+					<span class="eng">Japanese</span>
+					<span lang="ja" class="jp hidden">日本語</span>
+				</button>
+			</div>
+			<h1 class="eng">Chinese Zodiac</h1>
+			<h1 lang="ja" class="jp hidden">干支判定</h1>
+			<figure class="eng">
+				<blockquote cite="https://en.wikipedia.org/wiki/Chinese_zodiac">
+					<p>traditional classification scheme based on the lunar calendar that assigns an animal and its
+						reputed attributes to each year in a repeating twelve-year cycle.</p>
+				</blockquote>
+				<figcaption>
+					<cite="https://en.wikipedia.org/wiki/Chinese_zodiac">
+						<a	href="https://en.wikipedia.org/wiki/Chinese_zodiac" target="_blank">-- Wikipedia</a></cite>
+				</figcaption>
+			</figure>
+			<figure lang ="ja" class="jp hidden">
+				<blockquote cite="https://futabanenga.jp/blog/hakubutsukan/361/">
+					<p>「干支（えと・かんし）」とは、本来「十干十二支（じっかんじゅうにし）」の略で、十干は甲・乙・丙・丁・戊・己・庚・辛・壬・癸の10の要素、十二支は子・丑・寅・卯・辰・巳・午・未・申・酉・戌・亥の12の要素を意味し、あわせて干支と呼びます。 中国やアジアなどの地域において、主に日、月、年や時間、また角度、物事の順序などを示すのに考え出され、用いられたものです。</p>
+				</blockquote>
+				<figcaption>
+					<cite="https://futabanenga.jp/blog/hakubutsukan/361/">
+						<a	href="https://futabanenga.jp/blog/hakubutsukan/361/" target="_blank">-- 年賀状博物館</a></cite>
+				</figcaption>
+			</figure>
+
+			<div class="form-content">
+				<div>
+					<label class="eng" for="birthYear">Birth Year</label>
+					<label lang="ja" class="jp hidden" for="birthYear">生年(西暦)</label>
+					<input type="number" name="birthYear" id="birthYear" class="cursor" required value=2000>
+				</div>
+				<button id="setZordic" class="block cursor">
+					<span class="eng">Set</span>
+					<span lang="ja" class="jp hidden">判定</span>
+				</button>
+			</div>
+			<h2 class="eng hidden" id="result-h2">You're <span id="placeresultEN"></span>.</h2>
+			<h2 lang="ja" class="jp hidden" id="result-h2-JP">あなたは <span lang="ja" id="placeresultJP"></span> 年</h2>
+			<div class="wrapper">
+				<div class="zodiac-img" id="zodiac-1"></div>
+				<div class="zodiac-img" id="zodiac-2"></div>
+				<div class="zodiac-img" id="zodiac-3"></div>
+				<div class="zodiac-img" id="zodiac-4"></div>
+				<div class="zodiac-img" id="zodiac-5"></div>
+				<div class="zodiac-img" id="zodiac-6"></div>
+				<div class="zodiac-img" id="zodiac-7"></div>
+				<div class="zodiac-img" id="zodiac-8"></div>
+				<div class="zodiac-img" id="zodiac-9"></div>
+				<div class="zodiac-img" id="zodiac-10"></div>
+				<div class="zodiac-img" id="zodiac-11"></div>
+				<div class="zodiac-img" id="zodiac-0"></div>
+			</div>
+			<span class="citation">Illustrated by :
+				<cite>
+					<a href="https://www.irasutoya.com/" target="_blank">いらすとや</a>
+				</cite>
+			</span>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
