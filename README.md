@@ -4,6 +4,10 @@ Do you know what your Chinese zodiac is?
   
 In this app, you can find your Chinese zodiac which is determined by your birth year, and learn how it is displayed in kanji!
 
+
+https://user-images.githubusercontent.com/95740190/202924332-b0e2de00-6431-4fed-87ef-5cac9fe292f5.mp4
+
+
 ## How It's Made:
 
 **Tech used:** HTML, CSS, JavaScript(vanilla)
