@@ -2,8 +2,7 @@
 
 Do you know what your Chinese zodiac is?
   
-In this app, you can find your Chinese zodiac which is determined by your birth year, and learn how it is displayed in kanji!
-
+In this app, you can find your Chinese zodiac which is determined by your birth year, and learn how it is displayed in kanji in Japanese
 
 https://user-images.githubusercontent.com/95740190/202924332-b0e2de00-6431-4fed-87ef-5cac9fe292f5.mp4
 
@@ -18,6 +17,7 @@ When I improve this project, I would update my code with OOP way so that it woul
 
 ## Lessons Learned:
 
-1. It was my first project in which I tried to use Javascript.
+1. This was my first project in which I tried to use Javascript.
   I learned how to change a site dynamically with **JavaScript**.
 2. As I am Japanese, I created a single page that displays two languages, English and Japanese.
+3. Based on this app, I created a member register app in which a member's profile icon would be displayed with their Chinese zodiac.  --> <a target="_blank" href="https://github.com/mai-ogiso/Member_Register_App">Visit Here</a>
